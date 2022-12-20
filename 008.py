@@ -36,5 +36,38 @@ for key in programming_dictionary:
 programming_dictionary = {}
 print(programming_dictionary)
 
+# Nesting Dictionary inside a Dictionary
 
+travel_log = {
+    "Nepal" : {
+        "cities_visited" : ["Kathmandu", "Pokhara", "Bardibas"],
+        "times_visited" : 100,
+        "Review" : "Excellent"
+    },
+    "India" : {
+        "cities_visited" : ["Delhi", "Banglore", "Sikkim"],
+        "times_visited" : 2,
+        "Review" : "Good"
+    }
+}
 
+print(travel_log["Nepal"]["cities_visited"][1])
+
+# Nesting Dictionary inside a List
+
+new_travel_log = [
+    {
+        "country" : "Nepal",
+        "cities_visited" : ["Kathmandu", "Pokhara", "Bardibas"],
+        "times_visited" : 100,
+        "Review" : "Excellent"
+    },
+    {
+        "country" : "India",
+        "cities_visited" : ["Delhi", "Banglore", "Sikkim"],
+        "times_visited" : 2,
+        "Review" : "Good"
+    }
+]
+
+print(new_travel_log[1]["cities_visited"][0])
